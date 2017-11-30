@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hisLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_music_video_white_24dp"
+            android:padding="10dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/textAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:text="number"
+            android:textColor="@color/white"
+            android:longClickable="true"
+            android:textSize="15sp" />
+    </FrameLayout>
+</LinearLayout>

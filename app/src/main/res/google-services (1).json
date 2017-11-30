@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93621916710",
+    "project_id": "icaretrackerapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93621916710:android:3ed8d3931fb9e890",
+        "android_client_info": {
+          "package_name": "sveltoz.icaretrackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93621916710-sp6vsnn0tfef0uktvtsklekuapd5mi91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sveltoz.icaretrackerapp",
+            "certificate_hash": "F33594092EC280668A6869DC7C5DA0C32FBDBBB5"
+          }
+        },
+        {
+          "client_id": "93621916710-ak0203iengderu12gk9to95dsv77jv27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRrdbm_Bm3SJfBcelh7p3TTe-NM5JCnnw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

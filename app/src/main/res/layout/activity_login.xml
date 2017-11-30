@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    tools:context=".Activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:scrollbars="none">
+
+            <ImageView
+                android:id="@+id/circleView"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/applogolarge" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/whitetransperent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Stay connected with friends and family"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editTextPin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/edt_text_style_with_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter 4 Digit PIN"
+                android:inputType="numberPassword"
+                android:maxLength="4" />
+
+
+            <TextView
+                android:id="@+id/textviewForgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="@string/forgotPin"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                app:cpv_animAutostart="true"
+                app:cpv_indeterminate="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

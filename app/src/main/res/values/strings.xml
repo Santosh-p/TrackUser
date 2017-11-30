@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">iCare Tracker</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_add_tracker" translatable="false">Add</string>
+    <string name="action_change_pass" translatable="false">Change Password</string>
+    <string name="title_activity_sign_up1">SignUpActivity1</string>
+    <string name="forgotPin"><u>Forgot PIN?</u> </string>
+    <!--<string name="gcm_defaultSenderId" translatable="false">93621916710</string>-->
+       
+    <string name="title_activity_maps">MapDemo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!--<string name="google_app_id" translatable="false">1:93621916710:android:3df6b36b58fb29b6</string>-->
+    <string name="trackee">Trackee</string>
+    <string name="register_as">Register As</string>
+    <string name="tracker">Tracker</string>
+    <string name="name">Name</string>
+    <string name="add_tracker">ADD</string>
+    <string name="email">Email</string>
+    <string name="title_activity_main_view">MainViewActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="fragment_one">Fragment One</string>
+    <string name="fragment_two">Fragment Two</string>
+
+    <string name="ranklabel">"Rank : "</string>
+    <string name="countrylabel">"Country : "</string>
+    <string name="populationlabel">"Population : "</string>
+    <string name="delete">Delete</string>
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last locationClass update time</string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+    <string name="location_updated_message">Location updated</string>
+    <string name="location_update">Location %1$s</string>
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="digit_name">A aBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzÁáÂâÃãÀàÇçÉéÊêÍíÓóÔôÕõÚú,. </string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="fa_dollar">&#xf155;</string>
+
+
+
+
+</resources>

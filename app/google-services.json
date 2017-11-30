@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "276824847520",
+    "firebase_url": "https://icare-tracker-161511.firebaseio.com",
+    "project_id": "icare-tracker-161511",
+    "storage_bucket": "icare-tracker-161511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276824847520:android:3ed8d3931fb9e890",
+        "android_client_info": {
+          "package_name": "sveltoz.icaretrackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276824847520-cihnu9tb509v6ind7lh0r0jcbr44jih8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPvyhKNwigX1HZtyo2oXRtuCdUbKmttik"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

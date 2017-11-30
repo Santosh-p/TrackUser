@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:title="">-->
+        <!--<menu>-->
+    <!--<item android:title="Home"-->
+          <!--android:id="@+id/nav_item_home"-->
+          <!--android:icon="@drawable/ic_home_black_18dp" />-->
+
+    <!--<item android:title="Trackers"-->
+          <!--android:id="@+id/nav_item_tracker"-->
+          <!--android:icon="@drawable/ic_visibility_black_18dp"/>-->
+
+    <!--<item android:title="Trackees"-->
+          <!--android:id="@+id/nav_item_trackee"-->
+          <!--android:icon="@drawable/ic_visibility_off_black_18dp"/>-->
+        <!--</menu>-->
+    <!--</item>-->
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:title="Profile"
+                android:id="@+id/nav_item_profile"
+                android:icon="@mipmap/ic_account_circle_white_24dp"/>
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="About Us"
+            android:id="@+id/AboutUs"
+            android:icon="@mipmap/applogolarge"/>
+        <item android:title="Rate Us"
+            android:id="@+id/RateUs"
+             android:icon="@mipmap/ic_stars_white_24dp"/>
+    </group>
+
+    <group android:id="@+id/group_logout_id">
+
+        <item android:title="Log Out"
+            android:id="@+id/Logout"
+            android:icon="@mipmap/ic_settings_power_white_24dp"/>
+    </group>
+</menu>

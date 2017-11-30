@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/trackerwelcomeview"
+    tools:context="sveltoz.icaretrackerapp.Activity.WelcomeActivity">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/circleView"-->
+        <!--android:layout_width="175dp"-->
+        <!--android:layout_height="175dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:src="@drawable/applogo" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="By signing up, I agree to iCare Tracker's Terms of Sevice and Privacy Policy." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonLogin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@drawable/btn_login_style"-->
+            <!--android:onClick="goToLogin"-->
+            <!--android:text="Login"-->
+            <!--android:textSize="22sp" />-->
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/btn_login_style"
+            android:onClick="goToRegister"
+            android:text="Sign Up"
+            android:textSize="22sp"
+            android:textColor="@color/White_Grey"/>
+    </LinearLayout>
+</RelativeLayout>

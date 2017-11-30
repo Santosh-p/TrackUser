@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/batteryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/lblChargingStatus"
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="Charging Status ="
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtChargingStatus"
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="Charging Status"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/lblChargingPer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="battery Level ="
+                android:textSize="18dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtChargingPer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Battery level Status"
+                android:textSize="18dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

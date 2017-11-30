@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sveltoz.icaretrackerapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.Permission.Location" />
+    <uses-permission android:name="android.permission.Request.Location" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <permission
+        android:name="net.simplifiedcoding.androidgcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" /> 
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="net.simplifiedcoding.androidgcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    // permission for lenovo and xiomee devices
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/applogolarge"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/ChatBackground"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Camera service -->
+        <service android:name=".Service.DemoCamService" />
+        <service
+            android:name=".Service.LocationUpdateService"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".Activity.AddTrackerActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.SubmitOTPActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.DrawerActivity"
+            android:theme="@style/Theme.Project.Activity1" />
+        <activity
+            android:name=".Activity.ChangePasswordActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+               
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+             
+        <activity
+            android:name=".Activity.AboutUsActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.PrivacySettingActivity"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.PendingNotificationsActivity"
+            android:label="Notifications"
+            android:theme="@style/ChatBackgroundwithoutmap" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:theme="@style/ChatBackground" />
+        <activity
+            android:name=".Activity.Profile_pic_display"
+            android:label="Profile photo"
+            android:parentActivityName=".Activity.ProfileActivity"
+            android:theme="@style/ChatBackgroundwithoutmap"/>
+        <!-- Firebase Notifications -->
+        <service
+            android:name=".Service.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Service.MyFirebaseInstanceIDService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="iCare Tracker"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".Activity.WelcomeActivity" />
+        <activity android:name=".Activity.LoginWithEmailActivity"></activity>
+
+        <receiver android:name=".Service.MyBroadcastReceiver"></receiver>
+    </application>
+
+</manifest>

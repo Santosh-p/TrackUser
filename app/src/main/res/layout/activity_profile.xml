@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sveltoz.icaretrackerapp.Activity.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleView"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignRight="@+id/circleView"
+            android:layout_marginTop="122dp"
+            android:src="@drawable/image_icon" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circleView"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitetransperent"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+
+                    <TextView
+                        android:id="@+id/tvUsername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:text="Username"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnEdit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/edit"
+                        android:onClick="changePasswordClick"
+                        android:paddingRight="5dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUsername"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="14dp"
+                    android:text="This name will be visible to your Trackers and Trackees"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Light_Grey" />
+
+                <TextView
+                    android:id="@+id/tvEmailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/note"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="14dp"
+                    android:text="Email id"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/whitetransperent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tvChangePass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:onClick="changePasswordClick"
+                    android:paddingLeft="14dp"
+                    android:text="Change PIN"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/btnChangePass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ic_keyboard_arrow_right_black_24dp"
+                    android:onClick="changePasswordClick" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/whitetransperent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tvDeleteAc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizantalLine3"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:onClick="deleteAccount"
+                    android:paddingLeft="14dp"
+                    android:text="Delete my account"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
